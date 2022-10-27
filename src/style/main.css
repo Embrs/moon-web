@@ -1,0 +1,36 @@
+html {
+  /* min-height: 100vh; */
+  max-width: 100vw;
+  width: 100vw;
+  overflow-y: overlay;
+  overflow-x: hidden;
+}
+
+/* Scroll */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background:rgba(195, 96, 155, 0.3);
+  cursor: pointer !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background:rgba(195, 96, 155, 0.6);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* page active */
+.page-enter-active {
+  transition: all 0.3s ease-out;
+}
+.page-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.page-enter-from,
+.page-leave-to {
+  transform: translateY(20px);
+  opacity: 0;
+}

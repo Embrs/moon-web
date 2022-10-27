@@ -1,0 +1,28 @@
+
+// RWD
+$pc-max-width: 1920px; // 頁面最大寬度邊界
+$web-media: 1025px;
+$pad-media: 1024px;
+$pads-media: 768px;
+$phone-media: 767px;
+
+// 電腦
+@mixin web-media() {
+  @media all and (min-width: $web-media) {
+    @content;
+  }
+}
+
+// 平板
+@mixin pad-media() {
+  @media all and (min-width: $pads-media) and (max-width: $pad-media) {
+    @content;
+  }
+}
+// 手機
+@mixin phone-media() {
+  @media all and (max-width: $phone-media) {
+    @content;
+  }
+}
+
