@@ -19,8 +19,8 @@ const ApiSearchData = () => {
 </script>
 
 <template lang="pug">
-//- aBackTop
-//-   .back-top {{"⌃"}}
+aBackTop
+  .back-top {{"⌃"}}
 #Layout
   //- 上面搜尋與分頁選項 --------------------
   .header-area
@@ -37,7 +37,7 @@ const ApiSearchData = () => {
         )
       .ctrl-tool-area
         //- 齒輪
-        RouterLink.icon-btn(to="/signin")
+        RouterLink.icon-btn(to="/register")
           SettingOutlined
         //- 鈴鐺
         aDropdown(:trigger="['click']")
@@ -60,7 +60,7 @@ const ApiSearchData = () => {
         RouterLink.icon-btn(to="/")
           MessageOutlined
         //- 人物
-        RouterLink.icon-btn(to="/signin")
+        RouterLink.icon-btn(to="/register")
           UserOutlined
 
     .page-tab-area
@@ -83,7 +83,7 @@ const ApiSearchData = () => {
   min-height: 100vh;
   .header-area {
     font-family: 'Dancing Script', cursive;
-    background: #fd7e14;
+    background: #F48A3A;
     .top-tool-area {
       height: 80px;
       padding: 30px;
@@ -131,7 +131,7 @@ const ApiSearchData = () => {
           bottom: -80px;
           width: 0;
           height: 0;
-          border-top: 100px solid #fd7e14;;
+          border-top: 100px solid #F48A3A;
           // border-top: 100px solid #aaa;
           border-right: 100px solid transparent;
           border-bottom: 0px solid #f00;
@@ -168,7 +168,7 @@ const ApiSearchData = () => {
   width: 40px;
   height: 40px;
   border-radius: 5px;
-  background: #fd7e14;
+  background: #F48A3A;
   color: #fff;
   display: flex;
   justify-content: center;

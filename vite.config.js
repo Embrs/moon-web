@@ -35,6 +35,7 @@ export default defineConfig({
       less: {
         modifyVars: {
           "primary-color": "#fd7e14",
+          "error-color" : "#e8716d",
           "border-radius-base": "4px"
         },
         javascriptEnabled: true,
