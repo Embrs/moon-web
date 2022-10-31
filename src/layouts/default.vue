@@ -92,6 +92,7 @@ aBackTop
       display: grid;
       grid-template-columns: 1fr 2fr 1fr;
       align-items: center;
+      gap: 20px;
       .logo-text {
         font-size: 46px;
         font-weight: bold;
