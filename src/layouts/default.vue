@@ -37,7 +37,7 @@ aBackTop
         )
       .ctrl-tool-area
         //- 齒輪
-        RouterLink.icon-btn(to="/register")
+        RouterLink.icon-btn(to="/setting")
           SettingOutlined
         //- 鈴鐺
         aDropdown(:trigger="['click']")
@@ -53,16 +53,18 @@ aBackTop
               aMenuItem
                 RouterLink(to="/") {{"Something else here"}}
               aMenu-divider
-              aMenuItem( key="3")
+              aMenuItem(key="3")
                 RouterLink(to="/") {{"Separated link"}}
 
         //- 對話框
         RouterLink.icon-btn(to="/")
           MessageOutlined
-        //- 人物
+        //- 已登入會員
+        RouterLink.icon-btn(to="/member")
+          UserOutlined
+        //- 登入
         RouterLink.icon-btn(to="/register")
           UserOutlined
-
     .page-tab-area
       .tab-item
         RouterLink(to="/shop") {{"揪起來"}}

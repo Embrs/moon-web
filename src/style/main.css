@@ -5,6 +5,10 @@ html {
   overflow-y: overlay;
   overflow-x: hidden;
 }
+p, pre {
+  padding: 0;
+  margin: 0;
+}
 
 /* Scroll */
 ::-webkit-scrollbar {

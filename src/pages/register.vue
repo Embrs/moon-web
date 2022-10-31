@@ -77,7 +77,7 @@ const ctrlType = ref("login"); // signup, login
         background-color: #fff;
         left: 0;
         top: -5%;
-        padding: 30px;
+        padding: 30px 30px 0 30px;
         border-radius: 3px;
         box-shadow: 2px 0 15px rgb(0 0 0 / 25%);
         min-height: 110%;
